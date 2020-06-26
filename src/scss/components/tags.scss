@@ -1,0 +1,34 @@
+// .tags
+
+.tags__block {
+  width: 50%;
+  margin-bottom: 40px;
+  font-weight: $font-medium;
+  font-size: 0.857em;
+
+  @media(max-width: $tablet - 1) {
+    width: 100%;
+  }
+}
+
+.tags__title {
+  text-transform: uppercase;
+  color: $black;
+  font-weight: $font-medium;
+  @extend .text-sm;
+  line-height: 1.286em;
+  @media(max-width: $mobile-sm) {
+
+  }
+}
+
+.tags__item {
+  margin-top: 9px;
+  margin-right: 7px;
+  color: $primary-color;
+  background: #F2EAFE;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px 6px;
+}

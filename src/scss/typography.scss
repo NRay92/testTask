@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.571em;
+  line-height: 140%;
+  margin-bottom: 32px;
+  @media(max-width: $mobile-sm){
+    font-size: 2em;
+    line-height: 140%;
+    margin-bottom: 18px;
+  }
+}
+
+p {
+  margin: 0 0 14px 0;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+
+
+.title{
+  color: $black;
+  font-weight: bold;
+  line-height: 128.91%;
+}
+.text-sm{
+  font-size: 0.857em; //12px;
+}
+.text-lg{
+  font-size: 1.286em; //18px;
+  @media(max-width: $mobile-sm){
+    font-size: 1em; // 14px;
+  }
+}

@@ -1,0 +1,153 @@
+extends ../layout/base
+
+block content
+  include ../parts/header
+  main
+    .container
+      section.section
+        .section__title.title
+          h1 Improving Education in 2020
+        .content
+          .content__main
+            .content__main-block
+                img.content__main-img(src="img/main-img.png" alt="Main image")
+          .content__aside
+            .content__aside-item
+              .text-block.horizontal
+                .text-block__item
+                  .text-block__title Tyrone Fairfield
+                  .text-block__text
+                    p 2020 Board of Education, Southwest City Schools District, OH
+                .text-block__item
+                  .text-block__label Election Day:
+                  .text-block__subtitle Nov 2nd, 2020
+                  .text-block__subtext p 26 days to go
+
+            .content__aside-item
+              .donate-block
+                .donate-block__title $
+                  span 25,324.56
+                .donate-block__text from 25 donations
+                .progpess
+                  .progpess__bar
+                    .progpess__load(data-donate='69.3%')
+                .donate-block__text.horizontal
+                  span Goal: $40,000
+                  .donate-block__text--md
+                    span 10 days to go
+                .donate-block__button
+                  .button.button--main Donate
+            .content__aside-item
+              .content__aside-buttons.horizontal
+                button.button.button--icon
+                  span.button__text Follow
+                a(href="#").button
+                  span.button__text Volunteer
+
+            .content__aside-item
+              .events
+                .events__header
+                  .events__title Upcoming Events
+                  a.events__link(href="#go-to-all-events-page") View all
+                .events__body
+                  .event
+                    .event__block
+                      .event__block-wrapper
+                        .event__date
+                          .event__weekday mon
+                          .event__day 24
+                        .event__info
+                          .event__name Main Street Meet and Greet
+                          .event__item
+                            .event__icon
+                              img(src="img/icons/icon-time.svg" alt="Time icon")
+                            .event__text 10:00 AM - 11:00 AM
+                          .event__item
+                            .event__icon
+                              img(src="img/icons/icon-map.svg" alt="Map icon")
+                            .event__text 125 Main St., Cherrytown, OH
+
+
+          .content__main
+            .tabs
+              .tabs__nav-wrapper
+                ul.tabs__nav
+                  li.tabs__item.tabs__item--active
+                    a.tabs__link(href='#tab-1' rel='nofollow') About
+                  li.tabs__item
+                    a.tabs__link(href='#tab-2' rel='nofollow') Updates
+                  li.tabs__item
+                    a.tabs__link(href='#tab-3' rel='nofollow') Supports
+                  //- span.tabs__item-line
+              .tabs__content
+                .tabs__content-item#tab-1
+                  .info
+                    .info__block
+                      .info__block-title Background
+                      .info__block-text
+                        p
+                          | In 2016 state representative elections, 42% of all candidates faced no major party opponents. Filing to even run for local office is difficult. For example, in New York State there are over 100 pages in the election law guide and an additional 65 page 2018 update guide that pertain to the rules for filing to run for local office. Campaign fundraising compliance is also challenging.
+                    .info__block
+                      .info__block-title Platform
+                      .tags
+                        .tags__title The issues
+                        .tags__block
+                          span.tags__item Civil liberties
+                          span.tags__item Campaign finance
+                          span.tags__item Criminal justic reform
+                          span.tags__item Crime
+                          span.tags__item Drugs
+                          span.tags__item Economy
+                      .tags
+                        .tags__title organizations i support
+                        .tags__block
+                          span.tags__item ACLU
+                          span.tags__item Action Institute for the Study of Religion and Liberty
+                          span.tags__item American Foundation for Suicide Prevention
+
+
+                .tabs__content-item#tab-2
+                  .info
+                    .info__block
+                      .info__block-title Platform
+                      .tags
+                        .tags__title The issues
+                        .tags__block
+                          span.tags__item Civil liberties
+                          span.tags__item Campaign finance
+                          span.tags__item Criminal justic reform
+                          span.tags__item Crime
+                          span.tags__item Drugs
+                          span.tags__item Economy
+                    .info__block
+                      .info__block-title Background
+                      .info__block-text
+                        p
+                          | In 2016 state representative elections, 42% of all candidates faced no major party opponents. Filing to even run for local office is difficult. For example, in New York State there are over 100 pages in the election law guide and an additional 65 page 2018 update guide that pertain to the rules for filing to run for local office. Campaign fundraising compliance is also challenging.
+                        p
+                          | In 2016 state representative elections, 42% of all candidates faced no major party opponents. Filing to even run for local office is difficult. For example, in New York State there are over 100 pages in the election law guide and an additional 65 page 2018 update guide that pertain to the rules for filing to run for local office. Campaign fundraising compliance is also challenging.
+
+
+                .tabs__content-item#tab-3
+                  .info
+                    .info__block
+                      .info__block-title Background
+                      .info__block-text
+                        p
+                          | In 2016 state representative elections, 42% of all candidates faced no major party opponents. Filing to even run for local office is difficult. For example, in New York State there are over 100 pages in the election law guide and an additional 65 page 2018 update guide that pertain to the rules for filing to run for local office. Campaign fundraising compliance is also challenging.
+                        p
+                          | In 2016 state representative elections, 42% of all candidates faced no major party opponents. Filing to even run for local office is difficult. For example, in New York State there are over 100 pages in the election law guide and an additional 65 page 2018 update guide that pertain to the rules for filing to run for local office. Campaign fundraising compliance is also challenging.
+                    .info__block
+                      .info__block-title Platform
+                      .tags
+                        .tags__title organizations i support
+                        .tags__block
+                          span.tags__item ACLU
+                          span.tags__item Action Institute for the Study of Religion and Liberty
+                          span.tags__item American Foundation for Suicide Prevention
+
+  include ../parts/footer
+
+block custom-scripts
+  //script(src='js/script-mainpage.js')
+  //script(src='js/nav.js')
